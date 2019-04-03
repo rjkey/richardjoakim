@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import NavBarBtn from "./navbarbtn";
 
 class NavBar extends Component {
