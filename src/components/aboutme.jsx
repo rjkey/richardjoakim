@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import { Wave } from "react-animated-text";
+import TextBoxes from "./textboxes";
 
 class AboutMe extends Component {
   state = {};
   render() {
-    return <h1>About me</h1>;
+    return <TextBoxes text="Hello" />;
   }
 }
 
