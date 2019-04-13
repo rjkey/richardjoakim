@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #999;
+$primary-color: #001f3f; //#444;
+$secondary-color: #2ecc40;
 $show-home-image: true;
 $home-image: url(../img/bg.png);
 $background-opacity: 0.5;
@@ -26,5 +26,30 @@ $background-opacity: 0.5;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+//Media query mixins
+@mixin mediaSmall {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLarge {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
