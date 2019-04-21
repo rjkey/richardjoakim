@@ -15,6 +15,10 @@
     @include easeOut;
   }
 
+  &.hide {
+    visibility: hidden;
+  }
+
   //Rotate into X with menu lines
   &.close {
     transform: rotate(180deg);
@@ -124,7 +128,7 @@
 
 //Delay each nav item slide by 0.1s
 
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
   .nav-item:nth-child(#{$i}) {
     transition-delay: $i * 0.1s;
   }

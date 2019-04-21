@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Snake</title>
+  </head>
+  <body style="overflow: hidden">
+    <main>
+      <div class="snake-div">
+        <canvas class="snakeCanvas">
+          Your browser does not support the canvas element.
+        </canvas>
+        <button class="startBtn" onclick="startGame()">Start</button>
+        <div class="back-icon">
+          <a href="stuff.html">
+            <i class="fas fa-arrow-circle-left fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="js/snake.js"></script>
+</html>

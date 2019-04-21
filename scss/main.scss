@@ -115,10 +115,12 @@ main {
   border-bottom: $secondary-color 5px solid;
 }
 
-.mail-div {
+.mail-div,
+.snake-link-div {
   border: $secondary-color 3px solid;
   padding: 1rem;
   margin: auto;
+  margin-bottom: 1rem;
   width: 60%;
   text-align: center;
   font-size: 20px;
@@ -127,6 +129,37 @@ main {
     @include easeOut;
     background: $secondary-color;
   }
+}
+
+.snake-div {
+  display: grid;
+  grid-gap: 420px;
+  grid-template-areas: "game" "button";
+}
+
+.snakeCanvas {
+  grid-area: game;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 4px white;
+  background: $secondary-color;
+}
+
+.startBtn {
+  grid-area: button;
+  background-color: $secondary-color;
+  border: none;
+  width: 10%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+  margin: auto;
 }
 
 @import "mobile";

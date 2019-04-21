@@ -8,6 +8,8 @@ const navItems = document.querySelectorAll(".nav-item");
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+menuBtn.addEventListener("click", getAge);
+snakeBtn.addEventListener("click", displaySnake);
 
 function toggleMenu() {
   console.log(showMenu);
@@ -28,4 +30,16 @@ function toggleMenu() {
 
     showMenu = false;
   }
+}
+
+function getAge() {
+  let birthday = new Date(1991, 2, 10);
+  let now = Date.now();
+  let difference = now - birthday;
+  let yearDifference = new Date(1970, 0, 0);
+  yearDifference.setMilliseconds(difference);
+
+  let age = yearDifference.getFullYear() - 1970;
+
+  console.log(age);
 }
