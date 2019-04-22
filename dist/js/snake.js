@@ -13,6 +13,7 @@ var snakeYDirectionValue = 0;
 var game;
 
 function startGame() {
+  resetCanvas();
   doc = document.addEventListener("keydown", direction);
   let snakeObj = new Snake(280, 180);
   snakeArray.push(snakeObj);
@@ -27,6 +28,10 @@ function startGame() {
 }
 
 function endGame() {
+  resetCanvas();
+}
+
+function resetCanvas() {
   doc = 0;
   ctx.clearRect(0, 0, 600, 400);
   clearInterval(game);

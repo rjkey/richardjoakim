@@ -143,6 +143,7 @@ main {
 
   .stuff-1-bg {
     width: 100%;
+    //src: "../img/snake.png";
   }
   .stuff-1-label {
     text-align: center;
@@ -155,6 +156,10 @@ main {
   height: 240px;
   width: 300px;
   border: $secondary-color 0.5px solid;
+}
+
+.screen-to-small {
+  visibility: hidden;
 }
 
 .snake-div {
