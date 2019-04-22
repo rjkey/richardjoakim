@@ -115,8 +115,7 @@ main {
   border-bottom: $secondary-color 5px solid;
 }
 
-.mail-div,
-.snake-link-div {
+.mail-div {
   border: $secondary-color 3px solid;
   padding: 1rem;
   margin: auto;
@@ -129,6 +128,33 @@ main {
     @include easeOut;
     background: $secondary-color;
   }
+}
+
+.stuff-div {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "stuff1 stuff2";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stuff-1 {
+  grid-area: stuff1;
+  text-align: center;
+
+  .stuff-1-bg {
+    width: 100%;
+  }
+  .stuff-1-label {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.stuff {
+  padding: 0.5rem;
+  height: 240px;
+  width: 300px;
+  border: $secondary-color 0.5px solid;
 }
 
 .snake-div {

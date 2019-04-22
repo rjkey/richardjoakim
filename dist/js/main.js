@@ -9,7 +9,6 @@ let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
 menuBtn.addEventListener("click", getAge);
-snakeBtn.addEventListener("click", displaySnake);
 
 function toggleMenu() {
   console.log(showMenu);
@@ -32,6 +31,10 @@ function toggleMenu() {
   }
 }
 
+function onAboutLoad() {
+  document.getElementById("myAge").innerHTML = getAge();
+}
+
 function getAge() {
   let birthday = new Date(1991, 2, 10);
   let now = Date.now();
@@ -41,5 +44,5 @@ function getAge() {
 
   let age = yearDifference.getFullYear() - 1970;
 
-  console.log(age);
+  return age;
 }

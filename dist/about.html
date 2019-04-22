@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="/dist/img/rjk.png" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>About me</title>
   </head>
-  <body>
+  <body onload="onAboutLoad()">
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -50,37 +51,43 @@
         <div class="bio">
           <h3 class="text-secondary">BIO</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            aspernatur excepturi quidem magnam veritatis porro iste deserunt
-            molestias reprehenderit, quaerat numquam, nihil nam maxime totam
-            ipsum aliquam eum libero. Magnam?
+            I am a <span id="myAge">0</span> year old guy from Norway who loves
+            to solve problems with technology and the rush i get from
+            succeeding. Feburary 2015 i moved to Aarhus, Denmark and started on
+            my software engineering degree. July 2019 i am moving back to Norway
+            and will be looking for a full time job as a software engineer.
           </p>
         </div>
         <div class="job job-1">
-          <h3>Blabla 1</h3>
-          <h6>Fullstack</h6>
+          <h3>Kamstrup A/S</h3>
+          <h5>Software engineering intern</h5>
+          <h6>February 2017 - June 2017</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            praesentium nulla minus deleniti maxime placeat dolore. Recusandae
-            ut voluptatem asperiores!
+            Worked on a project created by earlier interns which is used as a
+            testing software. My role was adding new features to the software as
+            well as refactoring old code. Technology used was C#, XAML and WPF.
           </p>
         </div>
         <div class="job job-2">
-          <h3>Blabla 2</h3>
-          <h6>Fullstack</h6>
+          <h3>Kamstrup A/S</h3>
+          <h5>Student programmer</h5>
+          <h6>July 2017 - June 2019</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            praesentium nulla minus deleniti maxime placeat dolore. Recusandae
-            ut voluptatem asperiores!
+            Worked on as support for the testing software i worked on during my
+            internship. My role was supporting new interns that took over the
+            project as well as writing test script for this software which
+            simulated real world cases. Technology used was C#, XAML and WPF.
           </p>
         </div>
         <div class="job job-3">
-          <h3>Blabla 3</h3>
-          <h6>Fullstack</h6>
+          <h3>
+            Box available for <span class="text-secondary">your</span> company
+          </h3>
+          <h5>Software engineer</h5>
+          <h6>July 2019 - forever</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            praesentium nulla minus deleniti maxime placeat dolore. Recusandae
-            ut voluptatem asperiores!
+            Im am finishing my degree as a software engineer summer 2019 and i
+            am looking for a full time job.
           </p>
         </div>
       </div>
