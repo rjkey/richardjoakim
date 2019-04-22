@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: #2ecc40;
     transition: all 0.5s ease-out; }
   .menu-btn.hide {
     visibility: hidden; }
@@ -103,7 +103,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/bg.png);
+    background: url(../img/bg.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -147,9 +147,10 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      color: #2ecc40; }
       main .icons a:hover {
-        color: #2ecc40;
+        color: white;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -293,6 +294,8 @@ main {
   .stuff-div {
     grid-template-areas: "stuff1";
     grid-template-columns: 1fr; }
+  .stuff {
+    margin: auto; }
   .snake-div {
     visibility: hidden; }
   .screen-to-small {
